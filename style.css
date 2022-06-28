@@ -1,0 +1,102 @@
+html {
+  font-size: 62.5%;
+  background-color: #EDEBEF;
+}
+
+.box1 {
+  position: absolute;
+  top: 20rem;
+  left: 20rem;
+  width: 78.4rem;
+  height: 46.1rem;
+  border-radius: 6rem;
+  background: #f8f8f8;
+  border: 0.1rem solid #ffffff;
+  box-shadow: 4rem 3rem 8rem rgba(54, 48, 116, 0.3);
+}
+.box1 .image {
+  position: absolute;
+  width: 35.9rem;
+  height: 35.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6.5rem;
+}
+.box1 .image .bgr {
+  position: absolute;
+  width: 35.9rem;
+  height: 35.9rem;
+  border-radius: 4rem;
+  box-shadow: inset 1rem 1rem 1rem rgba(0, 0, 0, 0.05), inset -1rem -1rem 2rem #ffffff;
+  filter: drop-shadow(-1rem -1rem 1rem #ffffff) drop-shadow(1rem 1rem 1rem rgba(0, 0, 0, 0.05));
+}
+.box1 .image .bgr img {
+  position: absolute;
+  width: 32.9rem;
+  height: 32.9rem;
+  border-radius: 3rem;
+  box-shadow: inset 1rem 1rem 1.5rem rgba(255, 255, 255, 0.2);
+  filter: drop-shadow(0.5rem 0.5rem 1rem rgba(37, 5, 57, 0.51));
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box1 .detail {
+  position: absolute;
+  width: 19rem;
+  height: auto;
+  left: 45.4rem;
+  top: 6.6rem;
+}
+.box1 .detail span {
+  position: absolute;
+  display: block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.box1 .detail #npl {
+  position: relative;
+  margin-bottom: 8.1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #d0d1db;
+  text-shadow: 0.1rem 0.1rem 0.1rem #ffffff;
+}
+.box1 .detail #tittle {
+  position: relative;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #86748d;
+}
+.box1 .detail #artist {
+  position: relative;
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+  color: #a7a1a8;
+  font-weight: 500;
+}
+.box1 .detail #album {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #beb7c0;
+}
+.box1 .btn-wraper {
+  position: absolute;
+  left: 44.6rem;
+  top: 34.3rem;
+  display: flex;
+  gap: 2.3rem;
+}
+.box1 .btn-wraper button {
+  height: 5.2rem;
+  width: 5.2rem;
+  border-radius: 50%;
+  border: none;
+  box-shadow: -1rem -1rem 1.5rem #ffffff, 1rem 1rem 1rem rgba(0, 0, 0, 0.05), inset 1rem 1rem 1rem rgba(0, 0, 0, 0.05), inset -1rem -1rem 2rem #ffffff;
+  cursor: pointer;
+}
+.box1 .btn-wraper button:hover {
+  background-color: rgba(255, 255, 255, 0.7960784314);
+}
+
+/*# sourceMappingURL=style.css.map */
