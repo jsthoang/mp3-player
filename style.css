@@ -1,6 +1,6 @@
 html {
   font-size: 62.5%;
-  background-color: #EDEBEF;
+  background-color: #edebef;
 }
 
 .box1 {
@@ -97,6 +97,106 @@ html {
 }
 .box1 .btn-wraper button:hover {
   background-color: rgba(255, 255, 255, 0.7960784314);
+}
+
+.box2 {
+  position: absolute;
+  z-index: 1;
+  width: 104.4rem;
+  height: 35.9rem;
+  left: 85rem;
+  top: 25rem;
+  background: #f7f7f7;
+  box-shadow: 0rem 6rem 10rem rgba(65, 44, 100, 0.3);
+  border-radius: 6rem;
+}
+.box2 .icon-gr {
+  position: absolute;
+  left: 24.2rem;
+  top: 9rem;
+}
+.box2 .icon-gr button {
+  display: inline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-right: 4.5rem;
+}
+.box2 #gr2 {
+  position: absolute;
+  display: inline;
+  left: 79.4rem;
+}
+.box2 .play-section {
+  position: absolute;
+  width: 29.6rem;
+  height: 10.1rem;
+  top: 5rem;
+  left: 41.4rem;
+}
+.box2 .play-section .bgr {
+  position: absolute;
+  border-radius: 50%;
+  width: 5.79rem;
+  height: 5.79rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f8f8f8;
+  box-shadow: -1rem -1rem 1.5rem #ffffff, 1rem 1rem 1rem rgba(0, 0, 0, 0.05), inset 1rem 1rem 1rem rgba(0, 0, 0, 0.05), inset -1rem -1rem 2rem #ffffff;
+  cursor: pointer;
+}
+.box2 .play-section .bgr button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: none;
+  width: 4.185rem;
+  height: 4.185rem;
+  background: linear-gradient(159.16deg, #917ce4 26.46%, rgba(63, 45, 137, 0) 116.55%);
+  box-shadow: inset 1rem 1rem 1.5rem rgba(255, 255, 255, 0.2);
+  filter: drop-shadow(0rem 0.5rem 1rem rgba(55, 46, 152, 0.65));
+  cursor: pointer;
+}
+.box2 .play-section .bgr:hover {
+  background-color: #ececec;
+}
+.box2 .play-section #play {
+  width: 10.1rem;
+  height: 10.1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box2 .play-section #play #pause {
+  width: 7.3rem;
+  height: 7.3rem;
+}
+.box2 .play-section #next-bgr {
+  right: 0;
+}
+.box2 .slide {
+  position: absolute;
+  left: 19.1rem;
+  top: 21.1rem;
+}
+.box2 .slide input {
+  width: 74.1rem;
+}
+.box2 .timePlay {
+  position: absolute;
+  display: flex;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  color: #917ce4;
+  opacity: 0.7;
+  top: 27.4rem;
+  left: 19rem;
+}
+.box2 .timePlay #played {
+  margin-right: 63rem;
 }
 
 /*# sourceMappingURL=style.css.map */

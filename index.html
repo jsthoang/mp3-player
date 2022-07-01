@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="main.js"></script>
     <!----------->
     <!----BOX 1---->
     <div class="player-main">
@@ -25,21 +24,72 @@
         <div class="detail">
           <span id="npl">Now Playing</span>
           <span id="tittle">Purple Haze</span>
-          <span id="artist">Adele</span>
+          <span id="artist">Jimi Hendrick</span>
           <span id="album">Woodstock</span>
         </div>
         <div class="btn-wraper">
-          <button>
-            <img src="favour-icon.svg" alt="" />
+          <button id="fav">
+            <img id="fav-img" src="favour-icon.svg" alt="idk" />
           </button>
-          <button>
-            <img src="playlist-add.svg" alt="pll-icon" />
+          <button id="add">
+            <img id="add-img" src="playlist-add.svg" alt="pll-icon" />
           </button>
-          <button>
-            <img src="share-icon.svg" alt="share-icon" />
+          <button id="share">
+            <img id="share-img" src="share-icon.svg" alt="share-icon" />
           </button>
         </div>
       </div>
+      <!-----BOX 2----->
+      <div class="box2">
+        <div class="icon-gr">
+          <button id="shuffle">
+            <img src="shuffle.svg" alt="shuffle" />
+          </button>
+          <button id="return1">
+            <img src="circle1.svg" alt="cc1" />
+          </button>
+        </div>
+
+        <div class="icon-gr" id="gr2">
+          <button id="return-all">
+            <img src="circle.svg" alt="cc2" />
+          </button>
+          <button id="setting">
+            <img src="setting.svg" alt="seting" />
+          </button>
+        </div>
+        <div class="play-section">
+          <div class="bgr">
+            <button id="prev">
+              <img src="prev.svg" alt="prev" />
+            </button>
+          </div>
+          <div class="bgr" id="play">
+            <button id="pause">
+              <img src="pause.svg" alt="pause" />
+            </button>
+          </div>
+          <div class="bgr" id="next-bgr">
+            <button id="next">
+              <img src="next.svg" alt="next" />
+            </button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <input type="range" name="time" id="timestamp" />
+        </div>
+        <div class="timePlay">
+          <span id="played">02:33</span>
+          <span id="remain">04:00</span>
+        </div>
+      </div>
     </div>
+    <!------------------------->
+    <div class="testing">
+      <button id="test" onclick="btnChange">TESTING</button>
+    </div>
+    <!--------------------------->
+    <script src="main.js"></script>
   </body>
 </html>
