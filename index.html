@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>🎧 My Music Player 🎧</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,6 +16,7 @@
         <div class="image">
           <div class="bgr">
             <img
+              id="cover"
               src="https://images-na.ssl-images-amazon.com/images/I/710TTiZBNIL.jpg"
               alt="album"
             />
@@ -64,9 +66,9 @@
               <img src="prev.svg" alt="prev" />
             </button>
           </div>
-          <div class="bgr" id="play">
-            <button id="pause">
-              <img src="pause.svg" alt="pause" />
+          <div class="bgr" id="playPause">
+            <button id="play">
+              <img id="play-img" src="play.svg" alt="pause" />
             </button>
           </div>
           <div class="bgr" id="next-bgr">
@@ -89,6 +91,8 @@
     <div class="testing">
       <button id="test" onclick="btnChange">TESTING</button>
     </div>
+    <!-- AUDIO -->
+    <audio src="smokin.mp3" id="song" type="audio/mpeg"></audio>
     <!--------------------------->
     <script src="main.js"></script>
   </body>
