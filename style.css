@@ -200,4 +200,10 @@ html {
   margin-right: 63rem;
 }
 
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 55%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

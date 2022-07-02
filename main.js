@@ -13,7 +13,10 @@ var playBtn = document.getElementById("play");
 var playBtnImg = document.getElementById("play-img");
 var nextBtn = document.getElementById("next");
 var prevBtn = document.getElementById("prev");
-//tittle-section
+
+var timeSlide = document.getElementById("time-slide");
+var duRaTion = document.getElementById("duration");
+var playEd = document.getElementById("played");
 //audio
 const song = document.getElementById("song");
 //bien phu
@@ -90,7 +93,6 @@ var song3 = new songProps(
 function playPause() {
   if (playBtnImg.getAttribute("src") == iconSet.play1) {
     song.play();
-    song.voume = 0.8;
   } else {
     song.pause();
   }
@@ -108,7 +110,11 @@ function nextSong() {
   songAlbumView.innerHTML = window["song" + demId].Album;
   songArtistView.innerHTML = window["song" + demId].Artist;
   songCover.setAttribute("src", window["song" + demId].Cover);
-  song.play();
+  if (playBtnImg.getAttribute("src") == iconSet.play2) {
+    song.pause();
+  } else {
+    song.play();
+  }
 }
 function prevSong() {
   song.pause();
@@ -123,7 +129,39 @@ function prevSong() {
   songAlbumView.innerHTML = window["song" + demId].Album;
   songArtistView.innerHTML = window["song" + demId].Artist;
   songCover.setAttribute("src", window["song" + demId].Cover);
-  song.play();
+  //song.play();
+  if (playBtnImg.getAttribute("src") == iconSet.play2) {
+    song.pause();
+  } else {
+    song.play();
+  }
+}
+//-------------------//
+//-----TIME SLIDe------//
+setInterval(function musicTime() {
+  var currentTime = song.currentTime;
+  var duration = song.duration;
+  if (currentTime >= 59) {
+    playEd.innerHTML = "0" + ((currentTime - 59) / 100 + 1).toFixed(2);
+  } else if (currentTime >= 119) {
+    playEd.innerHTML = "0" + ((currentTime - 119) / 100 + 2).toFixed(2);
+  } else if (currentTime >= 179) {
+    playEd.innerHTML = "0" + ((currentTime - 179) / 100 + 3).toFixed(2);
+  } else if (currentTime >= 239) {
+    playEd.innerHTML = "0" + ((currentTime - 239) / 100 + 4).toFixed(2);
+  } else {
+    playEd.innerHTML = "0" + (currentTime / 100).toFixed(2);
+  }
+  duRaTion.innerHTML = "0" + (duration / 60).toFixed(2);
+  timeSlide.value = currentTime * (100 / duration);
+  if (currentTime >= duration || currentTime == 0) {
+    playBtnImg.setAttribute("src", iconSet.play2);
+  }
+  console.log(currentTime);
+}, 1000);
+function clickTime() {
+  song.currentTime = timeSlide.value * (song.duration / 100);
+  console.log(song.currentTime);
 }
 // chay cac ham khac
 songNameView.innerHTML = window["song" + demId].Name;
@@ -139,5 +177,5 @@ playBtn.addEventListener("click", btnChange);
 playBtn.addEventListener("click", playPause);
 nextBtn.addEventListener("click", nextSong);
 prevBtn.addEventListener("click", prevSong);
-
+timeSlide.addEventListener("change", clickTime);
 //----------------//
